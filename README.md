@@ -1,4 +1,4 @@
-# Paper_Code
+# Paper&Code
 Record my research and encourage myself
 
 * (arXiv 2021.06)How to train your ViT? Data, Augmentation, and Regularization in Vision Transformers,【[Paper](https://arxiv.org/pdf/2106.10270.pdf)】 
