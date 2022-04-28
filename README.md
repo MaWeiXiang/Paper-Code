@@ -1,6 +1,13 @@
 # Paper&Code
 Record my research and encourage myself
 
+     更新：2022/4/28
+     更新：2022/4/4
+     创建：2022/3/28
+
+* （）On the Effectiveness of Local Binary Patterns in Face,
+* (IEEE 2012) A face antispoofing database with diverse attacks,【[Paper](http://www.cbsr.ia.ac.cn/users/zlei/papers/ICB2012/ZHANG-ICB2012.pdf)】
+
 * (arXiv 2022) Nighborhood Attention Transformer,【[Paper](https://arxiv.org/abs/2204.07143)】【[Code](https://github.com/SHI-Labs/Neighborhood-Attention-Transformer)】
 
 ##### 【AI DIGEST】
