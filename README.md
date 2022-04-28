@@ -1,6 +1,91 @@
 # Paper&Code
 Record my research and encourage myself
 
+* (arXiv 2022) Nighborhood Attention Transformer,【[Paper](https://arxiv.org/abs/2204.07143)】【[Code](https://github.com/SHI-Labs/Neighborhood-Attention-Transformer)】
+
+##### 【AI DIGEST】
+      **What this paper is about
+      It is different from self attention being applied to local windows, and can be thought of as a convolution with a content-dependant kernel.
+      We compare this module in terms of complexity and memory usage to self attention, window self attention, and convolutions.
+      Both window self attention and neighborhood attention have a linear computational cost and memory usage with respect to resolution, as opposed to self attention's quadratic cost and memory.
+      **What you can learn
+      Through the use of overlapping convolutions, and our NAT design boosts, classification accuracy is significantly while resulting in fewer parameters and FLOPS than Swin-T. Swapping SWSA with NA results in an improvement of almost 0.5% in accuracy.
+      In this paper, we introduced an alternate way of localizing self attention with respect to the structure of data, which computes key-value pairs dynamically for each token, along with a more data efficient configuration of models. This helps create a model that utilizes both the power of attention, as well as the efficiency and inductive biases of convolutions.
+      We've shown the power of such a model in image classification, in which it outperforms both Swin Transformer and ConvNeXt significantly.
+
+* (CVPR 2022) MPViT Multi-Path Vision Transformer for Dense Prediction,【[Paper](https://arxiv.org/abs/2112.11010)】【[Code](https://github.com/youngwanLEE/MPViT)】
+
+##### 【AI DIGEST】
+      **What this paper is about
+      It is crucial for dense prediction tasks such as object detection and segmentation to represent features at multiple scales for discriminating between objects or regions of varying sizes.
+      In this work, we focus on how to effectively represent multi-scale features with Vision Transformers for dense prediction tasks.
+      Following the standard training recipe as in DeiT, we train MPViTs on ImageNet-1K, which consistently achieve superior performance compared to recent SOTA Vision Transformers.
+      **What you can learn
+      To validate the effectiveness of our attention map qualitatively, we compare attention maps of MPViT and CoaT.
+      The attention maps of path-2 showcase the changing behavior between paths-1 and 3 since the scale of path-2 is in-between the scales of paths-1 and 3, and accordingly, the attention maps also begin to transition from smaller to larger objects.
+      In other words, although the attention map of path-2 attends similar regions as path-1, it is also more likely to emphasize larger objects, as path-3 does.
+      We test all models on the same Nvidia V100 GPU with a batch size of 256.
+      Lite Small with a simple multi-stage structure similar to Swin.
+      Lite and path-1 have similar patch sizes and show similar attention maps.
+      Lite simultaneously attend to large and small objects, as shown in the 4th row.
+      Lite on classification, detection, and segmentation tasks.
+      The input image and corresponding attention maps from each path are illustrated.
+
+* (CVPR 2022) MetaFormer is Actually What You Need for Vision,【[Paper](https://arxiv.org/abs/2111.11418)】
+
+##### 【AI DIGEST】
+      **What this paper is about
+      By regarding the attention module as a specific token mixer, we further abstract the overall transformer into a general architecture MetaFormer where the token mixer is not specified, as shown in.
+      To verify this hypothesis, we apply an extremely simple non-parametric operator, pooling, as the token mixer to conduct the most basic token mixing.
+      Specifically, by only employing a simple non-parametric operator, pooling, as an extremely weak token mixer for MetaFormer, we build a simple model named PoolFormer and find it can still achieve highly competitive performance.
+      **What you can learn
+      Thus, we replace the token mixer pooling with attention or spatial FC 1 in the top one or two stages in PoolFormer.
+      It achieves 81.0% accuracy with only 16.5M parameters and 2.7G MACs.
+      In this work, we abstracted the attention in transformers as a token mixer, and the overall transformer as a general architecture termed MetaFormer where the token mixer is not specified.
+
+* (NIPS 2021) XCiT Cross-Covariance Image Transformers,【[Paper](https://arxiv.org/abs/2106.09681)】
+
+##### 【AI DIGEST】
+      **What this paper is about
+      Self-attention, as introduced by Vaswani et al., operates on an input matrix X 2 R N d where N is the number of tokens, each of dimensionality d. The input X is linearly projected to queries, keys and values, using the weight matrices W q 2 R ddq W k 2 R dd k and W v 2 R ddv such that Q=XW q K=XW k and V =XW v where d q = d k. Keys and values are used to compute an attention map A. Softmax, and the output of the self-attention operation is defined as the weighted sum of N token features in V with the weights corresponding to the attention map.
+      The non-zero part of the eigenspectrum of the Gram and covariance matrix are equivalent, and the eigenvectors of C and G can be computed in terms of each other.
+      We draw upon this strong connection between the Gram and covariance matrices to consider whether it is possible to avoid the quadratic cost to compute the N N attention matrix, which is computed from the analogue of the N N Gram matrix QK > =XW q W > k X.
+      **What you can learn
+      XCiT with 1616 patches provides a strong performance especially for smaller models where XCiT-S12/16 outperforms Swin-T. We present an alternative to token self-attention which operates on the feature dimension, eliminating the need for expensive computation of quadratic attention maps.
+      In particular, it exhibits a strong image classification performance on par with state-of-the-art transformer models while similarly robust to changing image resolutions as convnets.
+      We use report the results provided by the authors in their open-sourced code https://github.com.
+
+
+* (arXiv 2021) Pyramid Vision Transformer A Versatile Backbone for Dense Prediction,【[Paper](https://arxiv.org/abs/2102.12122)】
+
+##### 【AI DIGEST】
+      **What this paper is about
+      Performance comparison on COCO val2017 of different backbones using RetinaNet for object detection, where "T", "S", "M" and "L" denote our PVT models with tiny, small, medium and large size.
+      Specifically, as illustrated in, our PVT overcomes the difficulties of the conventional Transformer by taking fine-grained image patches as input to learn high-resolution representation, which is essential for dense prediction tasks; introducing a progressive shrinking pyramid to reduce the sequence length of Transformer as the network deepens, significantly reducing the computational cost, and adopting a spatial-reduction attention layer to further reduce the resource consumption when learning high-resolution features.
+      We propose Pyramid Vision Transformer, which is the first pure Transformer backbone designed for various pixel-level dense prediction tasks.
+      **What you can learn
+      Similar to the traditional Transformer, the length of ViT's output sequence is the same as the input, which means that the output of ViT is singlescale.
+      Benefiting from the above designs, our method has the following advantages over ViT: 1 more flexible-can generate feature maps of different scales/channels in different stages; 2 more versatile-can be easily plugged and played in most downstream task models; 3 more friendly to computation/memory-can handle higher resolution feature maps or longer sequences.
+      To provide instances for discussion, we design a series of PVT models with different scales, namely PVT.
+      In, we also present some qualitative object detection and instance segmentation results on COCO val2017, and semantic segmentation results on ADE20K. These results indicate that a pure Transformer backbone without convolutions can also be easily plugged in dense prediction models, and obtain high-quality results.
+      We introduce PVT, a pure Transformer backbone for dense prediction tasks, such as object detection and seman.
+      Extensive experiments on object detection and semantic segmentation benchmarks verify that our PVT is stronger than well-designed CNN backbones under comparable numbers of parameters.
+
+* (ICCV 2021) Multiscale Vision Transformers,【[Paper](https://arxiv.org/abs/2104.11227)】
+
+##### 【AI DIGEST】
+      **What this paper is about
+      We present Multiscale Vision Transformers, a transformer architecture for modeling visual data such as images and videos.
+      Our focus in this paper is video recognition, and we design and evaluate MViT for video tasks.
+      We further apply MViT to ImageNet classification, by simply removing the temporal dimension of the video architecture, and show significant gains over single-scale vision transformers for image recognition.
+      **What you can learn
+      We further train a deeper 24-layer model with longer sampling, MViT-B-24, 323, to investigate model scale on this larger dataset.
+      B is further improved by increasing the number of input frames and MViT.
+      B layers and using K600 pre-trained models.
+      In, we analyze the speed/accuracy trade-off of our MViT models, along with their counterparts vision transformer and Con-vNets.
+      We have presented Multiscale Vision Transformers that aim to connect the fundamental concept of multiscale feature hierarchies with the transformer model.
+      In empirical evaluation, MViT shows a fundamental advantage over single-scale vision transformers for video and image recognition.
+
 * (arXiv 2021) Local-to-Global Self-Attention in Vision Transformers,【[Paper](https://arxiv.org/abs/2107.04735)】
 
 ##### 【AI DIGEST】
