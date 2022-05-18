@@ -4,7 +4,18 @@ Record my research and encourage myself
      更新：2022/4/28
      更新：2022/4/4
      创建：2022/3/28
+## Content
+### [DRL-paper](https://github.com/MaWeiXiang/Paper-Code/edit/main/README.md#drl-paper-1)
+### [ML-paper](https://github.com/MaWeiXiang/Paper-Code/edit/main/README.md#ml-paper-1)
 
+------
+
+### DRL-paper
+* [2018 人工智能技术在安全漏洞领域的应用](http://www.infocomm-journal.com/txxb/CN/article/downloadArticleFile.do?attachType=PDF&id=167583)
+> * 如何将机器学习、自然语言处理等人工智能技 术应用于安全漏洞的研究已成为新的热点
+> * 首先分析了安全漏洞的**自动化挖掘、自动化评估、自动化利用和自动化修补**等关键技术，指出安全漏洞挖掘的自动化是人工智能在安全漏洞领域应用的重点，然后分析和归纳了近年来提出的将人工智能技术应用于安全漏洞研究的最新研究成果，指出了应用中的一些问题，给出了相应的解决方案。
+
+### ML-paper
 * （）On the Effectiveness of Local Binary Patterns in Face,
 * (IEEE 2012) A face antispoofing database with diverse attacks,【[Paper](http://www.cbsr.ia.ac.cn/users/zlei/papers/ICB2012/ZHANG-ICB2012.pdf)】
 
