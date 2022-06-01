@@ -5,8 +5,8 @@ Record my research and encourage myself
      更新：2022/4/4
      创建：2022/3/28
 ## Content
-### [DRL-paper](https://github.com/MaWeiXiang/Paper-Code/edit/main/README.md#drl-paper-1)
-### [ML-paper](https://github.com/MaWeiXiang/Paper-Code/edit/main/README.md#ml-paper-1)
+### [DRL-paper](https://github.com/MaWeiXiang/Paper-Code#drl-paper-1)
+### [ML-paper](https://github.com/MaWeiXiang/Paper-Code#ml-paper-1)
 
 ------
 
