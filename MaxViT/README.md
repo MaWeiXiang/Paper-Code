@@ -1,3 +1,5 @@
+#### 了解更多[ChristophReich1996](https://github.com/ChristophReich1996/MaxViT)  [qwopqwop200](https://github.com/qwopqwop200/MaxVIT-pytorch/blob/main/MaxVIT.py)
+
 # Usage
 
 #tiny model
