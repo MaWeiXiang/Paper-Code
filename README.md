@@ -146,6 +146,7 @@ Record my research and encourage myself
     In this work, we have presented a detailed study of introducing convolutions into the Vision Transformer architecture to merge the benefits of Transformers with the benefits of CNNs for image recognition tasks.
 
 *
+* (arXiv 2022.04) MaxViT: Multi-Axis Vision Transformer【[Paper](https://arxiv.org/abs/2204.01697)】【[Code]()】
 * (arXiv 2022.03) Transformer-based Multimodal Information Fusion for Facial Expression Analysis, 【[Paper](https://arxiv.org/pdf/2203.12367.pdf)】
 * (arXiv 2022.03) Facial Expression Recognition with Swin Transformer,【[Paper](https://arxiv.org/pdf/2203.13472.pdf)】
 * (arXiv 2022.01) Training Vision Transformers with Only 2040 Images,【[Paper](https://arxiv.org/pdf/2201.10728.pdf)】
@@ -156,6 +157,8 @@ Record my research and encourage myself
 * (arXiv 2021.03) Swin Transformer: Hierarchical Vision Transformer using Shifted Windows, 【[Paper](https://arxiv.org/pdf/2103.14030.pdf)】,【[Code](https://github.com/microsoft/Swin-Transformer)】
 * (ICLR'21) An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale, 【[Paper](https://arxiv.org/pdf/2010.11929.pdf)】,【[Code](https://github.com/google-research/vision_transformer)】
 * (arXiv 2017.06v1)Attention Is All You Need, 【[Paper](https://arxiv.org/pdf/1706.03762.pdf)】
+
+
 ### 中文文献
 * 人脸活体检测，蒋方玲等【[Paper](https://kns.cnki.net/kcms/detail/detail.aspx?doi=10.16383/j.aas.c180829)】
 * 人脸活体检测，马玉琨等【[Paper](https://cf.cnki.net/kcms/detail/detail.aspx?filename=KXTS202107003&dbcode=XWCJ&dbname=XWCTLKCJFDLAST2021&v=)】
