@@ -1,6 +1,7 @@
 # Usage
-```
+
 #tiny model
+```
 tiny_args = {'stage_num_block':[2,2,5,2],
               'input_dim':3,
               'stem_dim':64,
