@@ -94,19 +94,3 @@ large_args = {'stage_num_block':[2,6,14,2],
               'act_layer':nn.GELU,
               'norm_layer':Channel_Layernorm}
 ```
-
-```
-def get_n_params(model):
-    pp=0
-    for p in list(model.parameters()):
-        nn=1
-        for s in list(p.size()):
-            nn = nn*s
-        pp += nn
-    return pp
-
-def test():
-    print(f'MaxViT-T:{get_n_params(MaxViT(&&&&_args))}')
-    print(MaxViT(&&&&_args)(torch.zeros(2,3,224,224)).shape)
-    
-```
