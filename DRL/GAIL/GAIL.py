@@ -112,3 +112,28 @@ ppo_agent = PPO(state_dim, hidden_dim, action_dim, actor_lr, critic_lr, lmbda,
 
 return_list = rl_utils.train_on_policy_agent(env, ppo_agent, num_episodes)
 
+def sample_expert_data(n_episode):
+    states = []
+    actions = []
+    for episode in range(n_episode):
+        state = env.reset()
+        done = False
+        while not done:
+            action = ppo_agent.take_action(state)
+            states.append(state)
+            actions.append(action)
+            next_state, reward, done, _ = env.step(action)
+            state = next_state
+    return np.array(states), np.array(actions)
+
+
+env.seed(0)
+torch.manual_seed(0)
+random.seed(0)
+n_episode = 1
+expert_s, expert_a = sample_expert_data(n_episode)
+
+n_samples = 30  # 采样30个数据
+random_index = random.sample(range(expert_s.shape[0]), n_samples)
+expert_s = expert_s[random_index]
+expert_a = expert_a[random_index]
